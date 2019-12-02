@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Welcome</h1>
+
+
+  <p>Hello! My name is Nicolás Medeiros and I live in Montevideo, Uruguay.</p> 
+  
+  <p>I'm a full stack web developer, scrum master and I hold a degree on Computer Science by the <a href='https://www.fing.edu.uy/en/inco/institucional/acercade'>UDELAR</a>.</p> 
+
+  <p>I have over 10 years of experience in the web development industry. Currently working extensively in Node.js and React.js.</p>
+
+
+
+  <h2>Posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
