@@ -4,16 +4,110 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="main-container">
+      <img src="{{ "/assets/rocket.svg" | prepend: site.baseurl }}" class="rellax" data-rellax-speed="-4"  style="width: 100px;position:absolute; right: 5%; bottom: 10px;opacity: 40%;" >
+      
+      
+      <div class="container home-page">
+        <div class="text-zone intro-me">
+          <h1>
+            Hi,<br> I'm Nicolas, <br> Software Engineer.
+          </h1>
+        </div>
       </div>
-    </div>
 
+      <div class="container home-page">
+        <div  class="text-zone text-zone-right reveal-text" style="left: 5%;">
+            Computer Engineer (FING- UDELAR) with 15+ years of experience designing and developing a wide variety of applications. Deep knowledge of cloud-based applications using AWS, Heroku, PHP, JavaScript and Ruby on Rails. Vast experience leading Agile teams and projects from inception to deployment. An enthusiast, fast-learner and team player who loves a challenge.  
+        </div>
+      </div>
+
+      <div class="container home-page">
+        <div class="text-zone text-zone-right reveal-text" style="left: 12%;">
+          <div class="skillz">
+            <div class="skillz-col">
+              <div class="skill">
+                <div>Javascript</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 90%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div>React</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 80%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div>Node</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 70%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div>PHP</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 60%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="skillz-col">
+              <div class="skill">
+                <div>CSS</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 70%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div>AWS</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 72%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div>Leadership</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 72%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+              <div class="skill">
+                <div>English</div>
+                <div class="star-ratings-css">
+                  <div class="star-ratings-css-top" style="width: 80%"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                  <div class="star-ratings-css-bottom"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container home-page hobbies-container reveal-text">
+        <div style="font-size: 48px; color:#fb7978; position: absolute;top: 10%;">I love</div>
+        <div class="hobbies">
+          <article><img src="{{ "/assets/coffee-cup.svg" | prepend: site.baseurl }}" alt="Coffee" title="Coffee"></article>
+          <article><img src="{{ "/assets/open-book.svg" | prepend: site.baseurl }}" alt="Reading" title="Reading"></article>
+          <article><img src="{{ "/assets/gym.svg" | prepend: site.baseurl }}" alt="Crossfit" title="Crossfit"></article>
+        </div>       
+      </div>
+    
+      <div class="container home-page text-align-center">
+        <div class="contact-me">
+          <a href="https://www.linkedin.com/in/nicolasmedeiros">Find me at LinkedIn</a>
+        </div>
+      </div>
+      <img src="{{ "/assets/lamp.svg" | prepend: site.baseurl }}" class="rellax reveal-lamp" data-rellax-speed="1" style="width: 70px;opacity: 90%;margin-top: auto; margin-left: 10%;" >
+      
+      
     {% include footer.html %}
+    </div>
 
   </body>
 
